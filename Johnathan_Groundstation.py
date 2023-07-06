@@ -16,13 +16,13 @@ button_1 = Button(root, text="→", padx=20, pady=20, command=lambda: button_cli
 button_2 = Button(root, text="←", padx=20, pady=20, command=lambda: button_click("Left"))
 button_3 = Button(root, text="↑", padx=20, pady=20, command=lambda: button_click("Forward"))
 button_4 = Button(root, text="↓", padx=20, pady=20, command=lambda: button_click("Backward"))
-button_5 = Button(root, text="SELF DESTRUCT")
+#button_5 = Button(root, text="SELF DESTRUCT")
 
 button_1.grid(row=2, column=2)
 button_2.grid(row=2, column=0)
 button_3.grid(row=1, column=1)
 button_4.grid(row=2, column=1)
-button_5.grid(row=3, column=0, columnspan=3)
+#button_5.grid(row=3, column=0, columnspan=3)
 
 
 
