@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Johnathan Groundstation")
-root.iconbitmap('c:/Desktop/Personal Projects/Johnathan-Groundstation/Test_icon.ico')
+root.iconbitmap('/Users/arturoleif/Desktop/Personal Projects/Johnathan-Groundstation/Test_icon.ico')
 
 direction_status = Entry(root, width=27)
 direction_status.grid(row=0, column=0, columnspan=3)
