@@ -1,5 +1,5 @@
 from tkinter import *       # The '*' means import everything from tkinter library
-
+import subprocess
 
 # The main window of the app is called the 'root'
 root = Tk()     # Creating that main window
@@ -12,13 +12,18 @@ e.insert(0, "Enter your password")
 
 password_status_label = Label(root, text="")
 
+def run_command():
+    root.destroy()
+    subprocess.Popen(["python3", "Johnathan_Groundstation.py"])
+
 def start_click():
     password_status_label.config(text="")
     
     if e.get() == "babi ngepeT":
         password_status_label.config(text="Welcome, Arthur", bd=20)
         # A button that takes user to the actual groundstation window
-        initiation_button = Button(root, bg='red', padx=40, pady=40, bd=50).grid(row=5, column=0)
+        initiation_button = Button(root, bg='red', padx=40, pady=40, bd=50, command=run_command)
+        initiation_button.grid(row=5, column=0)
 
     else :
         password_status_label.config(text="Password incorrect")
